@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.62 320.29">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Lora-Bold, Lora;
+        font-size: 38.59px;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #ece1bc;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        font-family: Poppins-Black, Poppins;
+        font-size: 133.92px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-2" transform="translate(0 114.7)"><tspan x="0" y="0">30%</tspan></text>
+      <text class="cls-1" transform="translate(16.08 273.19)"><tspan class="cls-4" x="0" y="0">Y</tspan><tspan class="cls-5" x="24.58" y="0">O</tspan><tspan x="54.03" y="0">UR ENTIRE</tspan><tspan class="cls-6" x="64.74" y="36.14">O</tspan><tspan x="93.95" y="36.14">R</tspan><tspan class="cls-3" x="120.43" y="36.14">D</tspan><tspan x="149.18" y="36.14">ER</tspan></text>
+    </g>
+  </g>
+</svg>

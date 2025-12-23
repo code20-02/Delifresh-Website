@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376.54 92.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #066;
+        font-family: Lora-SemiBoldItalic, Lora;
+        font-size: 81.98px;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0 69.68)"><tspan x="0" y="0">Our </tspan><tspan class="cls-2" x="171.18" y="0">S</tspan><tspan x="219.06" y="0">to</tspan><tspan class="cls-3" x="293" y="0">r</tspan><tspan x="331.86" y="0">y</tspan></text>
+  </g>
+</svg>

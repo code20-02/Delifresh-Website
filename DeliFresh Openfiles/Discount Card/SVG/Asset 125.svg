@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.92 51.59">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Poppins-LightItalic, Poppins;
+        font-style: italic;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        fill: #066;
+        font-size: 34.78px;
+      }
+
+      .cls-3 {
+        font-family: Poppins-Black, Poppins;
+        font-weight: 800;
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-2" transform="translate(0 29.79)"><tspan class="cls-1" x="0" y="0">Get </tspan><tspan class="cls-3" x="71.47" y="0">30% Off </tspan><tspan class="cls-1" x="214.51" y="0">Your First Order</tspan></text>
+  </g>
+</svg>

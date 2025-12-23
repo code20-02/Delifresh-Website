@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 801.29 26.74">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #066;
+        font-family: Lora-SemiBoldItalic, Lora;
+        font-size: 23.63px;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-2" transform="translate(0 20.08)"><tspan class="cls-3" x="0" y="0">S</tspan><tspan x="13.8" y="0">tay updated with Delif</tspan><tspan class="cls-4" x="256.1" y="0">r</tspan><tspan class="cls-1" x="266.76" y="0">esh events, indust</tspan><tspan class="cls-5" x="457.94" y="0">r</tspan><tspan x="469.13" y="0">y news, and catering solutions.</tspan></text>
+  </g>
+</svg>

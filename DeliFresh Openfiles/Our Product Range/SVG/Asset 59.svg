@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 777.63 23.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ebe0bb;
+        font-family: Lora-SemiBoldItalic, Lora;
+        font-size: 21.12px;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0 17.95)"><tspan class="cls-4" x="0" y="0">Fr</tspan><tspan x="21.16" y="0">esh, </tspan><tspan class="cls-4" x="63.24" y="0">r</tspan><tspan x="72.77" y="0">eliable, and customized </tspan><tspan class="cls-3" x="301.41" y="0">f</tspan><tspan x="308.48" y="0">ood solutions designed </tspan><tspan class="cls-2" x="530.15" y="0">f</tspan><tspan x="537.23" y="0">or businesses and events.</tspan></text>
+  </g>
+</svg>
