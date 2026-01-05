@@ -2,13 +2,16 @@
   --green: #2a6465;
   --blue: #79aad7;
   --white: #ffffff;
-  --beige: #f5e4a9;
+  --beige: #ebe0bb;
   --orange: #ef5523;
 
   --font-main: 'Poppins', sans-serif;
   --font-heading: 'Lora', serif;
 }
 
+body{
+  background-color: var(--beige) !important;
+}
 body, h1,h2{
   font-family: var(--font-main) !important;
 }
@@ -19,14 +22,7 @@ h3,h4,h5,h6, p{
 
 /* ---------------------------------------------
    Legacy header/navigation styling (commented out for reference)
-----------------------------------------------
-.site-header.header-absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-}
+---------------------------------------------- */
 
 .main-slider .single-slide {
   padding-top: 60px;
@@ -53,14 +49,35 @@ h3,h4,h5,h6, p{
   text-wrap: nowrap;
 }
 
-.navigation-area a:hover {
-  color: white !important;
+.navigation-area .mainmenu li a:hover {
+  color: var(--orange) !important;
 }
 
 .navigation-area {
-  border-top: 2pt solid #ef5523;
-  border-bottom: 2pt solid #ef5523;
+  border-top: 2pt solid var(--orange);
+  border-bottom: 2pt solid var(--orange);
   background: transparent;
+}
+
+#sticky-header .navigation-area {
+  border-top: none;
+  border-bottom: none;
+  background-color: var(--beige);
+  margin: 0;
+  padding: 0;
+}
+
+#sticky-header .site-header {
+  background-color: var(--beige);
+  padding: 0;
+}
+
+#sticky-header .navigation-area ::before{
+  border-top: none;
+  border-bottom: none;
+  background-color: var(--beige);
+  margin: 0;
+  padding: 0;
 }
 
 .mainmenu li a {
@@ -72,10 +89,9 @@ h3,h4,h5,h6, p{
 .mainmenu li a:hover {
   color: var(--white) !important;
 }
-*/
 
 /* Header & Navigation – new look */
-.site-header {
+/* .site-header {
   position: relative;
   z-index: 60;
   background-color: var(--white);
@@ -157,7 +173,7 @@ h3,h4,h5,h6, p{
 .navigation .mainmenu>li>a:focus {
   color: var(--blue) !important;
   transform: translateY(-2px);
-}
+}  */
 
 .sticky-logo {
   display: none !important;
@@ -223,7 +239,7 @@ h3,h4,h5,h6, p{
 .site-header .mainmenu .sub-menu li a:hover,
 .site-header .mainmenu .sub-menu li a:focus {
   background-color: var(--green);
-  padding-left: 18px;
+  padding-left: 8px;
 }
 
 .site-header .mainmenu .sub-menu li a span {
@@ -242,7 +258,6 @@ h3,h4,h5,h6, p{
   color: var(--blue) !important;
 }
 
-/* Hero title/subtitle in teal (not white) to match screenshot */
 .main-slider .single-slide .slider-title {
   color: var(--green) !important;
 }
@@ -430,17 +445,6 @@ h3,h4,h5,h6, p{
 .story-buttons .btn-img.btn-green img{
     width: 150px;
 }
-
-/* 
-.btn-pill {
-  padding: 14px 34px;
-  border-radius: 999px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-} */
-
 
 
 /* Decorative assets */
@@ -655,11 +659,7 @@ h3,h4,h5,h6, p{
 
 
 .cloud-card:hover {
-  background-color: var(--beige);
-  transform: translateY(-10px) scale(1.06);
-  box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.15),
-    0 0 0 4px rgba(121, 170, 215, 0.25);
+  transform: translateY(-10px) scale(1.15);
 }
 
 @media (max-width: 992px) {
@@ -1055,18 +1055,91 @@ h3,h4,h5,h6, p{
   }
 }
 
+/* ===============================
+   Reservation Block Redesign
+================================ */
+
+.reservation-block {
+  background-color: var(--green) !important;
+}
+
 .reservation-block .title-main>span{
-  font-family: "Herr Von Muellerhoff", cursive !important;
+  font-family: var(--font-main) !important;
+  font-weight: 600 !important;
+  font-size: 100px !important;
+  color: var(--beige);
   display: inline-block;
-  margin-right: 12px;
-  transform: translateY(-15px);
+  transform: translateY(-35px);
   
 }
 
 .reservation-block .title-main{
+  font-weight: 600 !important;
+  font-size: 100px !important;
+  color: var(--beige) !important;
   display: inline-block;
-  font-family: var(--font-heading) !important;
+  font-family: var(--font-main) !important;
 }
+
+.reservation-block .subtitle{
+  font-family: var(--font-heading) !important;
+  font-style: italic !important;
+  font-size: 18px !important;
+  color: var(--beige) !important;
+  display: inline-block;
+} 
+
+
+.reservation-block.style-two .form-controllar, .reservation-block.style-two .select-custom {
+  border: 2px solid var(--beige);
+}
+
+.reservation-block.style-two .form-controllar:focus, .reservation-block.style-two .select-custom :focus {
+  border-color: var(--orange) !important;
+  box-shadow: 0 0 8px rgba(239, 85, 35, 0.4);
+}
+
+.reservation-form-area .form-controllar::placeholder,
+.reservation-form-area .select-custom::placeholder {
+  font-family: var(--font-main) !important;
+  color: rgba(230, 221, 189, 0.7); /* beige */
+  font-weight: 600 !important;
+  letter-spacing: 0.4px;
+}
+
+/* Catering CTA Button */
+#catering-submit {
+  background-color: var(--beige);
+  color: #0b5f55; /* dark green / charcoal */
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 38px;
+  border-radius: 50px;
+  border: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+/* Hover state */
+#catering-submit:hover {
+  background-color: #f2e8c9; /* lighter beige */
+  color: var(--orange);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus & active */
+#catering-submit:focus,
+#catering-submit:active {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+
 
 /* ===============================
    Latest News Redesign
@@ -1518,7 +1591,7 @@ h3,h4,h5,h6, p{
 
 .factory-card-title {
   font-family: var(--font-main) !important;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 800;
   color: var(--green);
   margin-bottom: 12px;
@@ -1539,7 +1612,7 @@ h3,h4,h5,h6, p{
 .factory-card-list li {
   margin-bottom: 8px;
   font-family: var(--font-heading) !important;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   font-style: italic;
 
@@ -1630,7 +1703,7 @@ h3,h4,h5,h6, p{
   justify-content: center;
   text-align: center;
   background-attachment: fixed;    
-  background-color: #f4e9c2;
+  background-color: var(--beige);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1640,7 +1713,7 @@ h3,h4,h5,h6, p{
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.1); 
+  background: rgba(0, 0, 0, 0.0); 
   z-index: 1;
 }
 
@@ -1832,41 +1905,59 @@ h3,h4,h5,h6, p{
 }
 
 .catering-row {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .catering-content-box {
   background: var(--green);
-  border-radius: 24px;
-  padding: 50px 60px;
+  border-radius: 36px;
+  padding: 60px;
   display: flex;
   align-items: center;
-  gap: 50px;
-  min-height: 320px;
+  gap: 60px;
 }
+
 
 .catering-cloud-image {
-  flex: 0 0 350px;
+  flex: 1;
+  aspect-ratio: 3 / 2;
   position: relative;
-  padding: 8px;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 42px;
 }
 
+
 .catering-cloud-image::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
-  border: 6px solid var(--orange);
+  background: url("../images/orangefr.png") no-repeat center / contain;
+  z-index: 3;
   pointer-events: none;
-  z-index: 1;
 }
+
 
 .catering-cloud-image img {
   width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
+
+  /* Mask */
+  -webkit-mask-image: url("../images/orangefr.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 95%;
+  -webkit-mask-position: center;
+
+  mask-image: url("../images/imgfr.png");
+  mask-repeat: no-repeat;
+  mask-size: 95%;
+  mask-position: center;
+
+  transform: scale(1.15);
 }
 
 /* Text content inside green box */
@@ -2594,6 +2685,7 @@ h3,h4,h5,h6, p{
 
 .contact-info i {
   color: var(--beige) !important;
+  padding-right: 20px;
 }
 
 .contact-info .social-icons a {
@@ -2782,3 +2874,125 @@ h3,h4,h5,h6, p{
 .case-cta-block .btn:hover {
   transform: translateY(-3px);
 }
+
+/* ============================
+   FOOTER BASE
+============================ */
+.site-footer {
+  background-color: #006666;
+  color: #ebe0bb;
+  font-family: var(--font-main);
+}
+
+.site-footer p,
+.site-footer a,
+.site-footer li {
+  color: #ebe0bb;
+}
+
+.site-footer .about-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.site-footer .social-status a {
+  color: #ebe0bb !important;
+  font-size: 14px;
+  margin-right: 12px;
+  transition: opacity 0.2s ease;
+}
+
+.site-footer .social-status a:hover {
+  color: var(--orange) !important;
+}
+
+.site-footer h5 {
+  font-family: var(--font-main) !important;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: var(--blue);
+}
+
+.site-footer .widget_links ul li a {
+  font-size: 16px;
+  padding: 4px 0;
+  display: inline-block;
+}
+
+.site-footer .widget_links ul li a:hover {
+  color: var(--orange);
+}
+
+.site-footer .form-control {
+  background: transparent;
+  border: 1px solid rgba(235, 224, 187, 0.4);
+  color: var(--green);
+  font-size: 14px;
+}
+
+.site-footer .tb-subscribe-widget .form-control::placeholder {
+  color: var(--green) ;
+  font-size: 13px;
+  font-weight: 400 !important;
+  letter-spacing: 0.4px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.site-footer .tb-subscribe-widget .text-muted{
+  font-size: 13px;
+  color: var(--green);
+  margin-top: 8px;
+  font-weight: 500 !important;
+}
+
+.site-footer #subscribe-btn {
+  background-color: #ebe0bb;
+  color: #006666;
+  border: none;
+  border-radius: 50%;
+}
+
+
+.site-footer.footer-default-style .footer-widget-area:before{
+  position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--beige);
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-footer .footer-bottom {
+  background-color: rgb(44, 44, 44);
+  color: var(--beige);
+  font-size: 16px;
+  /* border-top: none; */
+}
+
+
+body.inner-page header.site-header {
+  position: relative;
+}
+
+/* HOME PAGE → ABSOLUTE HEADER */
+body.home-page header.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* NICE SELECT */
+body .reservation-block .nice-select.open,
+body .reservation-block .nice-select:focus {
+  border-color: var(--orange) !important;
+  box-shadow: none !important;
+}
+

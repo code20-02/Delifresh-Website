@@ -9041,7 +9041,7 @@ a:active {
   .site-header.default-header-style .mainmenu>li>a.active {
     background-color: transparent;
     text-decoration: none;
-    color: #007862 !important;
+    color: #007862;
   }
 
   .site-header.header-style-one .mainmenu .sub-menu>li>a:hover,
